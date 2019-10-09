@@ -14,12 +14,19 @@ public class QueueService {
 
     public void addNew (QueueElement queueElement) {
         if (first == null) {
-            first = queueElement;
+            this.first = queueElement;
         }
         while (queueElement.getNext()!= null) {
             queueElement.setNext(queueElement);
         }
     }
 
-
+    public void deleteFirst () {
+        if (first == null) {
+            return;
+        }
+        else {
+            this.first = first.getNext();
+        }
+    }
 }
