@@ -11,7 +11,6 @@ public class QueueService {
         this.first = first;
     }
 
-
     public void addNew (QueueElement queueElement) {
         if (first == null) {
             first = queueElement;
