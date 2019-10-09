@@ -8,6 +8,7 @@ public class QueueElement {
        this.person = new Person (name, id);
     }
 
+
     public Person getPerson() {
         return person;
     }
