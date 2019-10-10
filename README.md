@@ -1,2 +1,2 @@
-
+[![Build Status](https://travis-ci.org/Aljasones/Queue.svg?branch=master)](https://travis-ci.org/Aljasones/Queue) [![codecov](https://codecov.io/gh/Aljasones/Queue/branch/master/graph/badge.svg)](https://codecov.io/gh/Aljasones/Queue)
 # Queue Service
