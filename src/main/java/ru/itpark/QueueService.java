@@ -4,7 +4,11 @@ package ru.itpark;
 public class QueueService {
     private QueueElement first;
 
-     public void addNew (QueueElement queueElement) {
+    public QueueElement getFirst() {
+        return first;
+    }
+
+    public void addNew (QueueElement queueElement) {
         if (first == null) {
             this.first = queueElement;
             return;

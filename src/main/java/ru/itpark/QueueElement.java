@@ -8,15 +8,7 @@ public class QueueElement {
        this.person = new Person (name, id);
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-
-    public QueueElement getNext() {
+      public QueueElement getNext() {
        return next;
     }
 
