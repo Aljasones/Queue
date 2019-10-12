@@ -8,7 +8,8 @@ public class QueueService {
         return first;
     }
 
-    public void addNew (QueueElement queueElement) {
+    public void addNew (Person person) {
+        QueueElement queueElement = new QueueElement(person);
         if (first == null) {
             this.first = queueElement;
             return;

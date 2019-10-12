@@ -4,8 +4,8 @@ public class QueueElement {
     private Person person;
     private QueueElement next;
 
-    public QueueElement(int id, String name) {
-       person = new Person (id, name);
+    public QueueElement(Person person) {
+        this.person = person;
     }
 
       public QueueElement getNext() {
