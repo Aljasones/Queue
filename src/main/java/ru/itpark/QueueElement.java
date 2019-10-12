@@ -9,12 +9,18 @@ public class QueueElement {
     }
 
     public QueueElement getNext() {
-       return next;
+        return next;
     }
 
     public void setNext(QueueElement next) {
         this.next = next;
     }
+
+    public Person getPerson() {
+        return person;
+    }
+
+
 }
 
 

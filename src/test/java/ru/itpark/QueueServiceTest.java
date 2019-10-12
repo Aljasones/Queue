@@ -13,9 +13,9 @@ public class QueueServiceTest {
 
     @Test
     public void addNew(){
-        int i =1;
+        QueueElement element = new QueueElement(person1);
         queueService.addNew(person1);
-        assertEquals(i, queueService.queueSize());
+        assertEquals(element.getPerson().getId(), queueService.getFirst().getPerson().getId());
     }
 
     @Test

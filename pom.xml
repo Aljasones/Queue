@@ -10,8 +10,8 @@
 
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -41,16 +41,18 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <excludes>
+                                <exclude>**/*Person.*</exclude>
+                                <exclude>**/*QueueElement.*</exclude>
+                            </excludes>
                             <rules>
                                 <rule>
                                     <element>CLASS</element>
                                     <includes>
                                         <include>**/*Service.class</include>
                                     </includes>
-                                    <excludes>
-                                        <exclude>*.Main</exclude>
-                                    </excludes>
-                                    <limits>
+
+                                        <limits>
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
