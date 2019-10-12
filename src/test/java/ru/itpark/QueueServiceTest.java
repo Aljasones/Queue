@@ -9,7 +9,7 @@ public class QueueServiceTest {
     QueueService queueService = new QueueService();
     @Test
     public void addNew(){
-        QueueElement addNew = new QueueElement("OtherName", 01);
+        QueueElement addNew = new QueueElement(01, "OtherName");
         queueService.addNew(addNew);
         QueueElement added = queueService.getFirst();
         assertEquals(addNew, added);
@@ -18,9 +18,9 @@ public class QueueServiceTest {
     @Test
     public void checkSize() {
         int i;
-        int hundred = 100:
+        int hundred = 100;
         for (i=0; i<hundred; i++) {
-            QueueElement element = new QueueElement("Name"+i, i);
+            QueueElement element = new QueueElement(i,"Name"+i);
             queueService.addNew(element);
         }
          assertEquals(i, queueService.queueSize());
@@ -31,7 +31,7 @@ public class QueueServiceTest {
         int test;
         int ten = 10;
         for (test=0; test<ten; test++) {
-            QueueElement element = new QueueElement("Name"+test, test);
+            QueueElement element = new QueueElement(test, "Name"+test);
             queueService.addNew(element);
         }
         queueService.deleteFirst();
@@ -43,7 +43,7 @@ public class QueueServiceTest {
         int test;
         int ten = 10;
         for (test=0; test<ten; test++) {
-            QueueElement element = new QueueElement("Name"+test, test);
+            QueueElement element = new QueueElement(test, "Name"+test);
             queueService.addNew(element);
         }
         for (test=0; test<11; test++) {         //11 раз, чтобы first == null в 11й раз

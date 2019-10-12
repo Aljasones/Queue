@@ -1,13 +1,14 @@
 package ru.itpark;
 
 public class Person {
-    private String name;
     private int id;
+    private String name;
 
 
-    public Person(String name, int id) {
-        this.name = name;
+
+    public Person(int id, String name) {
         this.id = id;
+        this.name = name;
     }
 
 }
