@@ -18,7 +18,8 @@ public class QueueServiceTest {
     @Test
     public void checkSize() {
         int i;
-        for (i=0; i<100; i++) {
+        int hundred = 100:
+        for (i=0; i<hundred; i++) {
             QueueElement element = new QueueElement("Name"+i, i);
             queueService.addNew(element);
         }
@@ -28,7 +29,8 @@ public class QueueServiceTest {
     @Test
     public void deleteFirst(){
         int test;
-        for (test=0; test<10; test++) {
+        int ten = 10;
+        for (test=0; test<ten; test++) {
             QueueElement element = new QueueElement("Name"+test, test);
             queueService.addNew(element);
         }
@@ -39,7 +41,8 @@ public class QueueServiceTest {
     @Test
     public void deleteAll(){
         int test;
-        for (test=0; test<10; test++) {
+        int ten = 10;
+        for (test=0; test<ten; test++) {
             QueueElement element = new QueueElement("Name"+test, test);
             queueService.addNew(element);
         }
