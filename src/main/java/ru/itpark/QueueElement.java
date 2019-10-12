@@ -5,7 +5,7 @@ public class QueueElement {
     private QueueElement next;
 
     public QueueElement(int id, String name) {
-       this.person = new Person (id, name);
+       person = new Person (id, name);
     }
 
       public QueueElement getNext() {
