@@ -44,6 +44,9 @@
                             <rules>
                                 <rule>
                                     <element>CLASS</element>
+                                    <includes>
+                                        <include>**/*Service.class</include>
+                                    </includes>
                                     <excludes>
                                         <exclude>*.Main</exclude>
                                     </excludes>

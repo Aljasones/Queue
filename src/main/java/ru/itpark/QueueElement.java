@@ -8,7 +8,7 @@ public class QueueElement {
         this.person = person;
     }
 
-      public QueueElement getNext() {
+    public QueueElement getNext() {
        return next;
     }
 
